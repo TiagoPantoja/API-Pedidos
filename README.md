@@ -12,7 +12,7 @@ API REST para gerenciamento de pedidos utilizando Java, Quarkus e Hibernate como
 
 A API utiliza MySQL. Certifique-se de ter um servidor MySQL em execução e crie um banco chamado 'pedidos'.
 
-Para ver os scripts SQL de criação das tabelas 'Pedido' e 'Cliente', verificar o arquivo de texto SQL na pasta raiz do projeto.
+Para ver os scripts SQL de criação das tabelas 'Pedido' e 'Cliente', verificar o arquivo de texto `SQL` na pasta raiz do projeto.
 
 Configure as propriedades no arquivo `application.properties`:
 
