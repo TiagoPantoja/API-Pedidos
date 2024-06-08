@@ -1,0 +1,19 @@
+-- Criar a tabela Cliente
+CREATE TABLE Cliente (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo INT NOT NULL UNIQUE,
+    nome VARCHAR(255) NOT NULL
+);
+
+-- Criar a tabela Pedido
+CREATE TABLE Pedido (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numeroControle VARCHAR(255) NOT NULL UNIQUE,
+    dataCadastro DATE,
+    nome VARCHAR(255) NOT NULL,
+    valor DECIMAL(10, 2) NOT NULL,
+    quantidade INT NOT NULL,
+    valorTotal DECIMAL(10, 2) NOT NULL,
+    cliente_id INT NOT NULL,
+    FOREIGN KEY (cliente_id) REFERENCES Cliente(id)
+);
